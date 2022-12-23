@@ -43,6 +43,10 @@ header {
   color: hsl(236, 13%, 42%);
 }
 
+.nav-link:hover {
+  color: #f15d51;
+}
+
 /*****SECTION PRINCIPAL*****/
 
 h1 {
@@ -87,6 +91,10 @@ h1 {
   width: max-content;
 }
 
+.button:hover {
+  background-color: hsl(240, 100%, 5%);
+}
+
 /*****SECTION NEW*****/
 
 .section-new {
@@ -126,6 +134,15 @@ h3 {
   line-height: 24px;
   font-weight: 700;
   margin-bottom: 10px;
+}
+
+.new-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.new-link:hover {
+  color: hsl(35, 77%, 62%);
 }
 
 .solid {
@@ -173,6 +190,15 @@ h4 {
 
 .popular-item-text-box p {
   line-height: 26px;
+}
+
+.popular-link {
+  text-decoration: none;
+  color: hsl(240, 100%, 5%);
+}
+
+.popular-link:hover {
+  color: #f15d51;
 }
 
 /*****ATTRIBUTION*****/
