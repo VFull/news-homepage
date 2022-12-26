@@ -1,5 +1,4 @@
 @media (max-width: 1050px) {
-
   header {
     padding-top: 45px;
     margin-bottom: 45px;
@@ -42,7 +41,6 @@
     padding: 20px 20px;
   }
 
-
   .new-heading-box {
     margin-bottom: 15px;
   }
@@ -63,7 +61,6 @@
 }
 
 @media (max-width: 600px) {
-
   header {
     padding-top: 35px;
     margin-bottom: 35px;
@@ -105,5 +102,64 @@
   }
 
   .popular-item img {
-    width: 25%;}
+    width: 25%;
+  }
+
+    /* MOBILE NAVIGATION */
+    .btn-mobile-nav {
+      display: block;
+      z-index: 9999;
+    }
+  
+    .main-nav {
+      background-color: rgb(253, 242, 233, .7);
+      position: absolute;
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      transform: translateX(100%);
+  
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.5s ease-in;
+  
+      /* 1) Hide it visually */
+      opacity: 0;
+  
+      /* 2) Make it unaccesible to mouse and keyboard */
+      pointer-events: none;
+  
+      /* 3) Hide it from screen readers */
+      visibility: hidden;
+    }
+  
+    .nav-open .main-nav {
+      opacity: 1;
+      pointer-events: auto;
+      visibility: visible;
+      transform: translateX(20%);
+    }
+  
+    .nav-open .icon-mobile-nav[name="close-outline"] {
+      display: block;
+    }
+  
+    .nav-open .icon-mobile-nav[name="menu-outline"] {
+      display: none;
+    }
+  
+    .main-nav-list {
+      flex-direction: column;
+      gap: 3.2rem;
+    }
+  
+    .main-nav-link:link,
+    .main-nav-link:visited {
+      font-size: 2rem;
+    }
+  }
 }

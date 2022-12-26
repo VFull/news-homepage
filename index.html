@@ -14,7 +14,7 @@
 
     <title>News homepage</title>
 
-      <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
@@ -22,20 +22,29 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/queries.css">
+    <link rel="stylesheet" href="./css/queries.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
   </head>
   <body>
-    <header class="container">
+    <header class="header container">
       <img src="./assets/images/logo.svg" alt="W logo" />
-      <nav>
-        <ul class="nav-links">
-          <li><a class="nav-link" href="#">Home</a></li>
-          <li><a class="nav-link" href="#">New</a></li>
-          <li><a class="nav-link" href="#">Popular</a></li>
-          <li><a class="nav-link" href="#">Trending</a></li>
-          <li><a class="nav-link" href="#">Categories</a></li>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li><a class="main-nav-link" href="#">Home</a></li>
+          <li><a class="main-nav-link" href="#">New</a></li>
+          <li><a class="main-nav-link" href="#">Popular</a></li>
+          <li><a class="main-nav-link" href="#">Trending</a></li>
+          <li><a class="main-nav-link" href="#">Categories</a></li>
         </ul>
       </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
     </header>
     <main class="main-grid container">
       <img
@@ -44,7 +53,11 @@
         alt="web 3.0
       illustration"
       />
-      <img class="web3-img small-hero" src="./assets/images/image-web-3-mobile.jpg" alt="">
+      <img
+        class="web3-img small-hero"
+        src="./assets/images/image-web-3-mobile.jpg"
+        alt=""
+      />
       <h1 class="main-heading">The Bright Future of Web 3.0?</h1>
       <div class="main-text-box">
         <p>
@@ -119,5 +132,6 @@
         >Frontend Mentor</a
       >. Coded by <a href="http://www.victorresines.com">Víctor Resines</a>.
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
